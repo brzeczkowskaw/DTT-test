@@ -21,7 +21,7 @@
     .navbar {
         height: 6em;
         width: 100%;
-        background-color: rgba(26, 90, 71, 0.3);
+        background-color: #0e392ce7;
         position: fixed;
         margin-top: 0;
         padding: 0;

@@ -1,22 +1,19 @@
 <template>
   <div>
     <Header :text=headerText />
-    <RandomPicture :picSrc=image :picAlt=sign />
-    <GroupPicture :picSrc=image :picAlt=sign />
+    <GroupPicture :picGrSrc=image :picGrAlt=sign />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import Header from '../components/Header.vue';
-import RandomPicture from '../components/RandomPicture.vue';
 import GroupPicture from '../components/GroupPicture.vue';
 
 export default defineComponent({
   name: "Home",
   components: {
     Header,
-    RandomPicture, 
     GroupPicture
   },
   data() {
