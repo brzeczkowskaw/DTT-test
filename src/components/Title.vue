@@ -8,7 +8,7 @@
     import { defineComponent } from "vue";
 
     export default defineComponent({
-        name: "Footer",
+        name: "Title",
         props: {
             text: String,
         }
@@ -19,20 +19,18 @@
     @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
 
     .header {
-        padding-top: 1em;
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
     .header-text {
-        padding-top: 5rem;
         font-family: 'Khand', sans-serif;
         text-align: center;
         align-items: center;
         letter-spacing: 0.05em;
         color: #DF7E5F;
-        font-size: 1.8em;
+        font-size: 1.5em;
         line-height: 1.5em;
     }
 </style>

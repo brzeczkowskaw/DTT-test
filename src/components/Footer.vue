@@ -29,7 +29,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
 
     .footer {
-        /* position: absolute; */
+        position: relative;
 		bottom: 0;
 		width: 100%;
 		height: 8.5em;
@@ -38,7 +38,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
-        margin-top: 2em;
+        margin-top: 5em;
     }
 
     .list { 

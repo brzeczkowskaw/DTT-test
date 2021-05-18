@@ -25,6 +25,7 @@
       background-color: #0E392C;
       margin: 0;
       padding: 0;
+      height: auto;
     }
 
 </style>

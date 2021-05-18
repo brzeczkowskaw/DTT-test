@@ -52,6 +52,7 @@
         height: 9em;
         background-color: #882335d8;
         border-radius: 30px;
+        cursor: pointer;
     }
 
     .picture-area:hover .name {

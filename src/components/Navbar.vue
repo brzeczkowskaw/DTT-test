@@ -3,7 +3,7 @@
         <ul class="list">
             <li class="link"><router-link to="/">Home</router-link></li>
             <li class="link"><router-link to="/categories">Categories</router-link></li>
-            <li class="link"><router-link to="/random">Random Meal</router-link></li>
+            <li class="link"><router-link to="/random" @click="getRandomMeal()">Random Meal</router-link></li>
         </ul>
     </div>
 </template>
@@ -13,6 +13,32 @@
 
     export default defineComponent({
         name: "Navbar",
+          data() {
+    return {
+        randomHeader: 'Random meal',
+        randomPhoto: '',
+        randomName: '',
+        randomButton: 'Get next one',
+    };
+  },
+  methods: {
+    async getRandomMeal() {
+        const res = await fetch("https://themealdb.p.rapidapi.com/random.php", {
+          "method": "GET",
+          "headers": {
+            "x-rapidapi-key": "93f974e090msh8c4227984a67af3p1f59dajsn266a08d9587b",
+            "x-rapidapi-host": "themealdb.p.rapidapi.com",
+          }
+        })
+        const results  = await res.json();
+        const meal = JSON.stringify(results);
+        const newmeal = JSON.parse(meal);
+        
+        this.randomPhoto = newmeal.meals[0].strMealThumb;
+        this.randomName = newmeal.meals[0].strMeal;
+        this.randomId = newmeal.meals[0].idMeal;
+    }
+  }
     });
 </script>
 
