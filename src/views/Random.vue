@@ -1,8 +1,11 @@
 <template>
-    <div>
+    <div class="container">
         <Header :text=randomHeader />
-        <RandomPicture :picSrc=randomPhoto :picAlt=randomName />
+        <router-link v-bind:to="'/meal/' + randomId" >
+          <RandomPicture :picSrc=randomPhoto :picAlt=randomName />
+        </router-link>
         <Title :text=randomName />
+        
         <Button :btnText=randomButton @click="getMeal()" />
     </div>
 </template>
@@ -24,7 +27,7 @@ export default defineComponent({
   },
   data() {
     return {
-        randomHeader: 'Random meal',
+        randomHeader: 'Draw your random meal for today',
         randomPhoto: '',
         randomName: '',
         randomButton: 'Get next one',
@@ -43,11 +46,14 @@ export default defineComponent({
         const results  = await res.json();
         const meal = JSON.stringify(results);
         const newmeal = JSON.parse(meal);
-        
+                
         this.randomPhoto = newmeal.meals[0].strMealThumb;
         this.randomName = newmeal.meals[0].strMeal;
         this.randomId = newmeal.meals[0].idMeal;
     }
-  }
+  },
+  beforeMount() {
+    this.getMeal()
+ },
 });
 </script>

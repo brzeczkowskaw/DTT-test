@@ -1,6 +1,6 @@
 <template>
     <div class="picture-area">
-        <img class="picture" v-bind:src=picSrc alt={{picAlt}} />
+        <img class="picture" v-bind:src=picSrc v-bind:alt=picAlt />
     </div>
 </template>
 
@@ -17,6 +17,7 @@
 </script>
 
 <style scoped>
+
     .picture-area {
         display: flex;
         justify-content: center;

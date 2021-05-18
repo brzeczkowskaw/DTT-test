@@ -1,6 +1,6 @@
 <template>
     <div class="picture-area">
-        <img class="picture" v-bind:src=picGrSrc alt={{picGrAlt}} /> 
+        <img class="picture" v-bind:src=picGrSrc v-bind:alt=picGrAlt /> 
         <div class="name">{{picGrAlt}}</div>
     </div>
 </template>
@@ -57,6 +57,7 @@
 
     .picture-area:hover .name {
         visibility: visible;
+        color: black;
     }
 
 </style>

@@ -28,4 +28,17 @@
       height: auto;
     }
 
+    *::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #EE4E1C;
+      border-radius: 2px;
+    }
+
 </style>
