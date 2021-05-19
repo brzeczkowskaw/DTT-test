@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <Header :text=randomHeader />
-        <router-link v-bind:to="'/meal/' + randomId" >
+        <router-link v-bind:to="'/meal/' + randomCategory + '/' + randomId" >
           <RandomPicture :picSrc=randomPhoto :picAlt=randomName />
         </router-link>
         <Title :text=randomName />
@@ -32,6 +32,7 @@ export default defineComponent({
         randomName: '',
         randomButton: 'Get next one',
         randomId: '',
+        randomCategory: '',
     };
   },
   methods: {
@@ -50,6 +51,7 @@ export default defineComponent({
         this.randomPhoto = newmeal.meals[0].strMealThumb;
         this.randomName = newmeal.meals[0].strMeal;
         this.randomId = newmeal.meals[0].idMeal;
+        this.randomCategory = newmeal.meals[0].strCategory;
     }
   },
   beforeMount() {

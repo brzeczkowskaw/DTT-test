@@ -4,14 +4,13 @@
             <ul class="list">
                 <li class="title">Go to</li>
                 <li class="link"><router-link to="/">Home</router-link></li>
-                <li class="link"><router-link to="/categories">Categories</router-link></li>
                 <li class="link"><router-link to="/random">Random Meal</router-link></li>
             </ul>
         </div>
         <div class="right-column">
             <ul class="list">
                 <li class="title">Created with &#10084; by</li>
-                <a class="link" href="https://brzeczkowskaw.netlify.app/#/">Weronika</a>
+                <a class="link" href="https://brzeczkowskaw.netlify.app/#/" target="_blank">Weronika</a>
             </ul>
         </div>
     </footer>
@@ -32,7 +31,7 @@
         position: relative;
 		bottom: 0;
 		width: 100%;
-		height: 8.5em;
+		height: 7em;
         background-color: rgba(26, 90, 71, 0.3);
         display: flex;
         flex-direction: row;

@@ -15,7 +15,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Random,
   },
   {
-    path: "/meal/:id",
+    path: "/meal/:category/:id",
     name: "Meal",
     component: Meal,
   },
