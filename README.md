@@ -12,6 +12,7 @@
 
 ## General info
 This project was created as a part of recruitment test to join DTT company. 
+You can see demo of app [here](https://brzeczkowskaw.github.io/DTT-test/#/).
 
 ## Features
 Application is a website to search ideas for meals with recipes. It uses TheMealDB API. 
