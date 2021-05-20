@@ -44,6 +44,10 @@
         z-index: 1;
     }
 
+    ul {
+        padding: 0;
+    }
+
     ul > li {
         float: left;
         list-style: none;
@@ -99,6 +103,7 @@
         justify-content: space-between;
         gap: 4.5em;
     }
+
     .link {
         text-decoration: none !important;
         font-family: 'Bebas Neue', cursive;
@@ -115,5 +120,45 @@
         text-decoration: none; 
         color: #EE4E1C;
         font-size: 1em;
+    }
+
+    @media (min-width: 501px) and (max-width: 800px) {
+        .link {
+            font-size: 1.4em;
+        }
+        
+        .list {
+            gap: 0.8em;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media (min-width: 381px) and (max-width: 500px) {
+        .link {
+            font-size: 1.2em;
+        }
+
+        .list {
+            gap: 2em;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .link {
+            font-size: 1em;
+        }
+
+        .list {
+            gap: 1em;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        ul > li ul {
+            width: 10rem;
+        }
     }
 </style>

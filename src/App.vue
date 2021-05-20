@@ -26,6 +26,7 @@
       margin: 0;
       padding: 0;
       height: auto;
+      max-width: 100%;
     }
 
     *::-webkit-scrollbar {

@@ -65,4 +65,14 @@
         text-decoration: none; 
         color: #EE4E1C;
     }
+
+    @media (max-width: 400px) {
+        ul {
+            font-size: 13px;
+        }
+
+        .footer {
+            margin-top: 3em;
+        }
+    }
 </style>

@@ -292,6 +292,13 @@
         margin-left: 3rem;
     }
 
+    @media (max-width: 800px) {
+        .ingredients {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr;
+        }
+    }
+
     .table {
         margin-left: auto;
         margin-right: auto;

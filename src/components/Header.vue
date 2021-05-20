@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h3 class="header-text" style="white-space: pre">{{ text }}</h3>
+    <h3 class="header-text" >{{ text }}</h3>
   </div>
 </template>
 
@@ -34,5 +34,16 @@
         color: #DF7E5F;
         font-size: 1.8em;
         line-height: 1.5em;
+    }
+
+    @media (max-width: 800px) {
+        .header-text {
+            overflow-wrap: break-word;
+            font-size: 1.2em;
+        }
+
+        .header-text {
+            white-space: none;
+        }
     }
 </style>

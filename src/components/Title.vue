@@ -33,4 +33,15 @@
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
+        @media (max-width: 800px) {
+        .header-text {
+            overflow-wrap: break-word;
+            font-size: 1.1em;
+        }
+
+        .header-text {
+            white-space: none;
+        }
+    }
 </style>

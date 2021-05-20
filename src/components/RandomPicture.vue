@@ -27,6 +27,12 @@
         height: 25em;
         width: 25em;
         border-radius: 30px;
-        margin: 1em;
+    }
+
+    @media (max-width: 700px) {
+        .picture {
+            height: 15em;
+            width: 15em;
+        }
     }
 </style>

@@ -23,7 +23,7 @@
     .picture-area {
         display: flex;
         justify-content: center;
-        width: 25em;
+        /* width: 25em; */
         margin: 2em;
     }
 
@@ -60,4 +60,25 @@
         color: black;
     }
 
+    @media (max-width: 400px) {
+        .picture {
+            height: 12em;
+            width: 12em;
+        }
+
+        .picture-area {
+            width: 10em;
+        }
+    }
+
+    @media (min-width: 401px) and (max-width: 450px) {
+        .picture {
+            height: 15em;
+            width: 15em;
+        }
+
+        .picture-area {
+            width: 15em;
+        }
+    }
 </style>

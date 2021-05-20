@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header style="white-space: pre" :text=headerText />
+    <Header :text=headerText />
     <div class="pics-container">
       <router-link v-bind:to="'/meal/' + groupCategory0 + '/' + groupId0" ><GroupPicture :picGrSrc=groupPhoto0 :picGrAlt=groupName0 /></router-link>
       <router-link v-bind:to="'/meal/' + groupCategory1 + '/' + groupId1" ><GroupPicture :picGrSrc=groupPhoto1 :picGrAlt=groupName1 /></router-link>

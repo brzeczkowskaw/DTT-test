@@ -43,4 +43,11 @@
     .btn:hover {
         transform: scale(0.96);
     }
+
+    @media (max-width: 700px) {
+        .btn {
+            width: 8em;
+            height: 2.3em;
+        }
+    }
 </style>
